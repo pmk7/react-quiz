@@ -49,6 +49,7 @@ const AppProvider = ({ children }) => {
     }
   };
 
+<<<<<<< HEAD
   const nextQuestion = () => {
     setIndex((oldIndex) => {
       const index = oldIndex + 1;
@@ -78,6 +79,8 @@ const AppProvider = ({ children }) => {
     setCorrect(0);
   };
 
+=======
+>>>>>>> 4d7f02c8d37324fe5567b73651de8eb8fb0950c6
   useEffect(() => {
     fetchQuestions(tempURL);
   }, []);
@@ -92,9 +95,12 @@ const AppProvider = ({ children }) => {
         correct,
         error,
         isModalOpen,
+<<<<<<< HEAD
         nextQuestion,
         checkAnswer,
         closeModal,
+=======
+>>>>>>> 4d7f02c8d37324fe5567b73651de8eb8fb0950c6
       }}
     >
       {children}
